@@ -1,0 +1,28 @@
+@use "../utilities/mixins" as *;
+@use "../utilities/base" as*;
+.nav{
+    &__container{
+        @include flex(space-between,center);
+
+        &__nav__right__counter{
+            @include flex(space-between,center);
+        }
+        
+            ul{
+                @include flex(center,center);
+                li{
+                    padding: 1em;
+                    color:black;
+                    list-style-type: none;
+                    font-size: 1.5rem;
+
+                    a{
+                        color:black;
+                        text-decoration: none;
+                    }
+                }
+                
+            }
+        
+    }
+}

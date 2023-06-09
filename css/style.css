@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.nav__container__nav__right__counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.nav__container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.nav__container ul li {
+  padding: 1em;
+  color: black;
+  list-style-type: none;
+  font-size: 1.5rem;
+}
+.nav__container ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/dun.jpg) no-repeat center center/cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  display: block;
+  color: white;
+  font-size: 2rem;
+  justify-content: center;
+  display: flex;
+}
+
+.teams {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 5px 3px 3px;
+  font-size: 1.2rem;
+  border-radius: 5px 3px 3px;
+  background-color: blue;
+}
+
+.players {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.players .document {
+  min-height: 400px;
+  min-width: 400px;
+  background-color: white;
+  box-shadow: 0 0 5px grey;
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1em;
+  border-radius: 5px;
+  display: none;
+}
+.players .document i {
+  cursor: pointer;
+}
+.players ul {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/alex.jpg) no-repeat center center/cover;
+  height: 110%;
+  width: 110%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.players ul li {
+  margin-top: 3em;
+  padding: 1em;
+  border-radius: 5px;
+  color: whitesmoke;
+  margin-right: 2em;
+  border: 5px solid white;
+  cursor: pointer;
+}
+.players ul li .btn {
+  padding: 0.5em;
+  margin: 1.2em;
+  background-color: blue;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.players ul li div {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+.players ul li div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.matches {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.2rem;
+  background-color: blue;
+}
+
+.footer {
+  background-color: white;
+}
+.footer__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 3em;
+  padding: 1em;
+  margin: 2em;
+}
+
+.form {
+  background-color: blue;
+  margin: 2em;
+}
+.form input {
+  padding: 2em;
+  width: 50%;
+}
+.form .btn {
+  padding: 0.5em;
+  background-color: aqua;
+  border: none;
+  border-radius: 10px;
+}

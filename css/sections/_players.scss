@@ -1,0 +1,58 @@
+@use "../utilities/mixins" as *;
+.players{
+    .document{
+        min-height: 400px;
+        min-width: 400px;
+        background-color: white;
+        box-shadow: 0 0 5px grey;
+        position: absolute;
+        top:150%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 1em;
+        border-radius: 5px;
+        display: none;
+
+        i{
+            cursor: pointer;
+        }
+    
+
+    }
+    @include flex(center, center, column);
+    // color: blue;
+    ul{
+        background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../../images/alex.jpg) no-repeat center center/cover;
+        height: 110%;
+        width: 110%;
+        @include flex(center, flex-start);
+        gap: 1em;
+        flex-wrap: wrap;
+        li{
+            margin-top: 3em;
+            padding: 1em;
+            border-radius: 5px ;
+            color: whitesmoke;
+            margin-right: 2em;
+            border: 5px solid white;
+            cursor: pointer;
+            .btn {
+                padding: 0.5em;
+                margin: 1.2em;
+                background-color: blue;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+              }
+            div{
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                                }
+        }
+    }
+        }}

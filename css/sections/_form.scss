@@ -1,0 +1,16 @@
+@use"../utilities/variables" as *;
+@use"../utilities/mixins" as *;
+.form{
+    background-color: blue;
+    margin: 2em;
+    input{
+        padding: 2em;
+        width: 50%;
+    }
+    .btn {
+        padding: 0.5em;
+        background-color: aqua;
+        border: none;
+        border-radius: 10px;
+      }
+}

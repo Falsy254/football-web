@@ -1,0 +1,8 @@
+@use "../utilities/mixins" as *;
+.matches{
+    @include flex(center, center, column);
+    // margin: 2em;
+    // padding: 1em;
+    font-size: 1.2rem;
+    background-color: blue;
+}
